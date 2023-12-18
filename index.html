@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+
+        <h2 id="header">Shopping Cart</h2>
+        <div id="main-container" class="main-row">
+            <div id="main-left" class="main-col-1">
+
+                <form name="purchase_form">
+
+                    <div id="input-fields">
+                        <label for="product-input">Product Name</label>
+                        <input type="text" name="product" id="product-input" placeholder="product" >
+                        <p id="alert_product" class="d-none">Invalid ProductName</p>
+                    </div>
+                    <div id="input-fields">
+                        <label for="amount-input">Amount</label>
+                        <input type="number" name="amount" id="amount-input" placeholder="amount" >
+                        <p id="alert_amount" class="d-none">Invalid amount</p>
+                    </div>
+                    <div id="btn-container">
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </form>
+
+            </div>
+            <div id="main-right" class="main-col-2">
+
+                <div>
+                    <ul id="purchase-header">
+                        <li>Product Name</li>
+                        <li>Amount</li>
+                        
+                    </ul>
+                </div>
+                <hr>
+                <div id="purchase-list">
+                    <!-- purchase list eill be added -->
+                    
+                </div>
+                <!-- <hr> -->
+                <div id="purchase-total" class="d-none">
+                    <ul>
+                        <li>Total Amount</li>
+                        <li id="total-amount">1000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="action-btn-container">
+            <button class="sort-action">Sort The Amount</button>
+        </div> -->
+    </div>
+
+    <div id="container_2">
+        <div id="popup">
+
+        </div>
+    </div>
+    <script src="ShoppingCart.js"></script>
+</body>
+</html>
