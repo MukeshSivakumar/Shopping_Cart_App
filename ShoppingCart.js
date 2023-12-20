@@ -29,13 +29,20 @@ formEl.addEventListener("submit",(event)=>{
     {
         event.preventDefault();
 
-        if(productName.trim() == "")
+        let alertProduct = document.getElementById("alert_product");
+        let alertAmount = document.getElementById("alert_amount");
+
+        if(productName.trim() == "" && productAmount == "")
         {
-            let alertProduct = document.getElementById("alert_product");
+            alertMsg(alertProduct);
+            alertMsg(alertAmount);
+        }
+        else if(productName.trim() == "")
+        {
             alertMsg(alertProduct);
         }
         else{
-            let alertAmount = document.getElementById("alert_amount");
+            
             alertMsg(alertAmount);
         }
 
