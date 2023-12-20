@@ -19,6 +19,7 @@
     --dark_lavendar : #451ad3;
     --light_lavendar : rgba(99, 83, 159, 0.3);
     --blue : #008cff;
+    --red : rgb(204,2,2);
 }
 
 body {
@@ -116,7 +117,8 @@ input[type='text'] , input[type='number'] {
     /* background: linear-gradient(to right, var(--lightpurple), var(--darkpurple), var(--lightpurple)); */
     background : linear-gradient(90deg, var(--blue), var(--dark_lavendar));;
     /* background-color: var(--purple); */
-    color : var(--white)
+    color : var(--white);
+    cursor: pointer;
 }
 
 
@@ -213,8 +215,26 @@ hr {
 #alert_product, #alert_amount {
     position : absolute;
     bottom : -40px;
-    color : red;
+    color : var(--red);
     font-size: 15px;
 }
 
+#del_icon {
+    color: var(--red);
+    cursor: pointer;
+}
 
+/* sort icon */
+
+#purchase_head {
+    display: flex;
+}
+
+#sort_icon {
+    font-size: 35px;
+    position : relative;
+    top : 33px;
+    /* left : 5px; */
+    color : var(--dark_lavendar);
+    cursor: pointer;
+}
